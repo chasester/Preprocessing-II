@@ -56,12 +56,19 @@ a {
   color: #212529;
   font-size: 1.6rem;
 }
+a:hover {
+  color: gray;
+}
 .btn {
   background: #17A2B8;
   padding: 4%;
   width: 80%;
   border-radius: 20px;
   text-align: center;
+  transition: filter 0.3s linear;
+}
+.btn:hover {
+  filter: grayscale(90%);
 }
 .btn a {
   font-size: 2rem;

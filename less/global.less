@@ -59,6 +59,10 @@ a
   text-decoration: none;
   color: @font-color;
   font-size: 1.6rem;
+  &:hover
+  {
+    color: gray;
+  }
 }
 .btn
 {
@@ -67,9 +71,15 @@ a
   width: 80%;
   border-radius: 20px;
   text-align: center;
+  transition: filter 0.3s linear; 
+  &:hover
+  {
+    filter: grayscale(90%);
+  }
   a 
   {
     font-size: 2rem;
     color: @main-bg;
+
   }
 }
