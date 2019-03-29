@@ -60,19 +60,30 @@ a:hover {
   color: gray;
 }
 .btn {
+  color: #FFFFFF;
   background: #17A2B8;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 20px;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
   padding: 4%;
   width: 80%;
-  border-radius: 20px;
-  text-align: center;
   transition: filter 0.3s linear;
+}
+.btn:hover {
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+  -webkit-transition: filter 0.7s linear;
+  transition: filter 0.7s linear;
 }
 .btn:hover {
   filter: grayscale(90%);
 }
-.btn a {
-  font-size: 2rem;
-  color: #FFFFFF;
+@media screen and (max-width: 1000px) {
+  .btn {
+    align-self: center;
+  }
 }
 header .nav-top {
   display: flex;

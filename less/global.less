@@ -66,20 +66,16 @@ a
 }
 .btn
 {
-  background: @button-bg;
+  .button(@main-bg; @button-bg);
   padding: 4%;
   width: 80%;
-  border-radius: 20px;
-  text-align: center;
   transition: filter 0.3s linear; 
   &:hover
   {
     filter: grayscale(90%);
   }
-  a 
+  @media screen and @tablet
   {
-    font-size: 2rem;
-    color: @main-bg;
-
+    align-self: center; 
   }
 }
