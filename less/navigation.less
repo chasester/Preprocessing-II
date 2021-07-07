@@ -1,1 +1,27 @@
 // Navigation Styles here
+header{
+    .nav-top
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav
+        {
+            display: flex;
+            justify-content: space-around;
+            width: 45%;
+
+            @media screen and @tablet
+            {
+                width: 100%;    
+            }
+        }
+        border-bottom: 0.2rem dashed @navigation-border;
+
+        @media screen and @tablet
+        {
+            flex-direction: column;
+            
+        }
+    }
+}
